@@ -146,8 +146,19 @@ def scraping(jogos):
             nota_publica = nota_publica.replace(".", "")
 
             wait = WebDriverWait(driver, 10)
+            reviews_publicas = driver.find_element(
+                By.XPATH,
+                '//*[@id="__nuxt"]/div[2]/main/div/div/section[1]/div/div[3]/div[4]/div/div[2]/div[1]/div[1]/div[2]/div[2]/a',
+            ).text
+
+            wait = WebDriverWait(driver, 10)
             nota_critica = driver.find_element(
                 By.CSS_SELECTOR, '[data-testid="global-score-value"]'
+            ).text
+
+            wait = WebDriverWait(driver, 10)
+            reviews_critica = driver.find_element(
+                By.CSS_SELECTOR, '[data-testid="global-score-review-count-link"]'
             ).text
 
             nota_critica_num = int(nota_critica)
@@ -157,13 +168,19 @@ def scraping(jogos):
 
             gap = gap * -1 if gap < 0 else gap
 
-            (print(f"{cada_jogo} : {nota_publica} e {nota_critica}, gap de : {gap}"))
+            (
+                print(
+                    f"{cada_jogo} : {nota_publica} | {reviews_publicas} | {nota_critica} | {reviews_critica} |, gap de : {gap}"
+                )
+            )
 
             notas.append(
                 {
                     "jogo": cada_jogo,
                     "publico": nota_publica,
+                    "reviewns players": reviews_publicas,
                     "critica": nota_critica,
+                    "reviews critica": reviews_critica,
                     "gap": gap,
                 }
             )
