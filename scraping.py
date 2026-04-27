@@ -7,64 +7,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.options import Options
 import pandas as pd
-
-options = Options()
-options.add_argument("--headless=new")
-options.add_argument("--no-sandbox")
-options.add_argument("--disable-dev-shm-usage")
-
-service = Service(ChromeDriverManager().install())
-driver = webdriver.Chrome(service=service, options=options)
-
-
-def Scraping(jogos):
-
-    jogos = Limpeza(jogos)
-
-    notas = []
-
-    for cada_jogo in jogos:
-
-        try:
-
-            driver.get(f"https://www.metacritic.com/game/{cada_jogo}/")
-
-            wait = WebDriverWait(driver, 10)
-            nota_publica = driver.find_element(
-                By.XPATH,
-                '//*[@id="__nuxt"]/div[2]/main/div/div/section[1]/div/div[3]/div[4]/div/div[2]/div[1]/div[2]/div/div/span',
-            ).text
-            nota_publica = nota_publica.replace(".", "")
-
-            wait = WebDriverWait(driver, 10)
-            nota_critica = driver.find_element(
-                By.CSS_SELECTOR, '[data-testid="global-score-value"]'
-            ).text
-
-            (print(f"{cada_jogo} : {nota_publica} e {nota_critica}"))
-
-            notas.append(
-                {"jogo": cada_jogo, "publico": nota_publica, "critica": nota_critica}
-            )
-
-        except Exception as e:
-            print(f"ERRO EM : {cada_jogo}... pulando para o proximo")
-
-    CriarSCV(notas)
-
-
-def CriarSCV(lista):
-    df = pd.DataFrame(lista)
-    df.to_csv("tudo_ai.csv", index=True)
-
-
-def Limpeza(jogos):
-
-    return [
-        j.replace("'", "").replace(":", "").replace(" ", "-").replace("’", "").lower()
-        for j in jogos
-    ]
-
+from concurrent.futures import ThreadPoolExecutor
+import time
 
 jogos = [
     "Elden Ring",
@@ -176,4 +120,99 @@ jogos = [
 ]
 
 
-Scraping(jogos)
+def scraping(jogos):
+
+    options = Options()
+    options.add_argument("--headless=new")
+    options.add_argument("--no-sandbox")
+    options.add_argument("--disable-dev-shm-usage")
+
+    service = Service(ChromeDriverManager().install())
+    driver = webdriver.Chrome(service=service, options=options)
+
+    notas = []
+
+    for cada_jogo in jogos:
+
+        try:
+
+            driver.get(f"https://www.metacritic.com/game/{cada_jogo}/")
+
+            wait = WebDriverWait(driver, 10)
+            nota_publica = driver.find_element(
+                By.XPATH,
+                '//*[@id="__nuxt"]/div[2]/main/div/div/section[1]/div/div[3]/div[4]/div/div[2]/div[1]/div[2]/div/div/span',
+            ).text
+            nota_publica = nota_publica.replace(".", "")
+
+            wait = WebDriverWait(driver, 10)
+            nota_critica = driver.find_element(
+                By.CSS_SELECTOR, '[data-testid="global-score-value"]'
+            ).text
+
+            nota_critica_num = int(nota_critica)
+            nota_publica_num = int(nota_publica)
+
+            gap = nota_publica_num - nota_critica_num
+
+            gap = gap * -1 if gap < 0 else gap
+
+            (print(f"{cada_jogo} : {nota_publica} e {nota_critica}, gap de : {gap}"))
+
+            notas.append(
+                {
+                    "jogo": cada_jogo,
+                    "publico": nota_publica,
+                    "critica": nota_critica,
+                    "gap": gap,
+                }
+            )
+
+        except Exception as e:
+            print(f"ERRO EM : {cada_jogo}... pulando para o proximo")
+
+    driver.quit()
+
+    return notas
+
+
+def criarSCV(lista):
+    df = pd.DataFrame(lista)
+    df.to_csv("tudo_ai.csv", index=True)
+
+
+def limpeza(jogos):
+
+    return [
+        j.replace("'", "").replace(":", "").replace(" ", "-").replace("’", "").lower()
+        for j in jogos
+    ]
+
+
+def quebraLista(jogos, n):
+
+    tamanho = len(jogos) // n
+    saida = []
+
+    for i in range(0, len(jogos), tamanho):
+        saida.append(jogos[i : i + tamanho])
+
+    return saida
+
+
+def scraping_MultiTreads(jogos, n):
+    jogos = limpeza(jogos)
+    Lista_Blocos = quebraLista(jogos, n)
+
+    notas_totais = []
+
+    with ThreadPoolExecutor(max_workers=n) as executor:
+        resultados = executor.map(scraping, Lista_Blocos)
+
+    for i in resultados:
+        notas_totais.extend(i)
+
+    criarSCV(notas_totais)
+
+
+scraping_MultiTreads(jogos, 5)
