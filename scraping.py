@@ -35,39 +35,39 @@ def scraping(jogos):
     options.add_argument("--disable-dev-shm-usage")
 
     service = Service(ChromeDriverManager().install())
-    driver = webdriver.Chrome(service=service, options=options)
+    with webdriver.Chrome(service=service, options=options) as driver:
 
-    wait = WebDriverWait(driver, 10)
-    notas = []
+        wait = WebDriverWait(driver, 10)
+        notas = []
 
-    for cada_jogo in jogos:
+        for cada_jogo in jogos:
 
-        try:
+            try:
 
-            dados_jogo = {"jogo": cada_jogo}
+                dados_jogo = {"jogo": cada_jogo}
 
-            driver.get(f"https://www.metacritic.com/game/{cada_jogo}/")
+                driver.get(f"https://www.metacritic.com/game/{cada_jogo}/")
 
-            for chave, (tipo_busca, caminho) in seletores.items():
+                for chave, (tipo_busca, caminho) in seletores.items():
 
-                elemento = wait.until(
-                    EC.presence_of_element_located((tipo_busca, caminho))
-                ).text
+                    elemento = wait.until(
+                        EC.presence_of_element_located((tipo_busca, caminho))
+                    ).text
 
-                if chave == "nota_publica":
-                    elemento = elemento.replace(".", "")
+                    if chave == "nota_publica":
+                        elemento = elemento.replace(".", "")
 
-                dados_jogo[chave] = elemento
+                    dados_jogo[chave] = elemento
 
-            dados_jogo["gap"] = abs(
-                int(dados_jogo["nota_publica"]) - int(dados_jogo["nota_critica"])
-            )
+                dados_jogo["gap"] = abs(
+                    int(dados_jogo["nota_publica"]) - int(dados_jogo["nota_critica"])
+                )
 
-            notas.append(dados_jogo)
-            print(f"{cada_jogo} coletado com sucesso")
+                notas.append(dados_jogo)
+                print(f"{cada_jogo} coletado com sucesso")
 
-        except Exception as e:
-            print(f"ERRO EM : {cada_jogo}... pulando para o proximo")
+            except Exception as e:
+                print(f"ERRO EM : {cada_jogo}... pulando para o proximo")
 
     driver.quit()
 
