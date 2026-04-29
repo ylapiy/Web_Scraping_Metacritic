@@ -11,6 +11,24 @@ from concurrent.futures import ThreadPoolExecutor
 
 def scraping(jogos):
 
+    seletores = {
+        "nota_publica": (
+            By.XPATH,
+            '//*[@id="__nuxt"]/div[2]/main/div/div/section[1]/div/div[3]/div[4]/div/div[2]/div[1]/div[2]/div/div/span',
+        ),
+        "nota_critica": (By.CSS_SELECTOR, '[data-testid="global-score-value"]'),
+        "reviews_publica": (
+            By.XPATH,
+            '//*[@id="__nuxt"]/div[2]/main/div/div/section[1]/div/div[3]/div[4]/div/div[2]/div[1]/div[1]/div[2]/div[2]/a',
+        ),
+        "reviews_critca": (
+            By.CSS_SELECTOR,
+            '[data-testid="global-score-review-count-link"]',
+        ),
+        "genero": (By.CSS_SELECTOR, ".global-link-button__label"),
+        "empresa": (By.CSS_SELECTOR, 'a[href*="/company/"]'),
+    }
+
     options = Options()
     options.add_argument("--headless=new")
     options.add_argument("--no-sandbox")
@@ -20,65 +38,33 @@ def scraping(jogos):
     driver = webdriver.Chrome(service=service, options=options)
 
     wait = WebDriverWait(driver, 10)
-
     notas = []
 
     for cada_jogo in jogos:
 
         try:
 
+            dados_jogo = {"jogo": cada_jogo}
+
             driver.get(f"https://www.metacritic.com/game/{cada_jogo}/")
 
-            genero = driver.find_element(
-                By.CSS_SELECTOR, ".global-link-button__label"
-            ).text
+            for chave, (tipo_busca, caminho) in seletores.items():
 
-            empresa = driver.find_element(By.CSS_SELECTOR, 'a[href*="/company/"]').text
+                elemento = wait.until(
+                    EC.presence_of_element_located((tipo_busca, caminho))
+                ).text
 
-            nota_publica = driver.find_element(
-                By.XPATH,
-                '//*[@id="__nuxt"]/div[2]/main/div/div/section[1]/div/div[3]/div[4]/div/div[2]/div[1]/div[2]/div/div/span',
-            ).text
-            nota_publica = nota_publica.replace(".", "")
+                if chave == "nota_publica":
+                    elemento = elemento.replace(".", "")
 
-            reviews_publicas = driver.find_element(
-                By.XPATH,
-                '//*[@id="__nuxt"]/div[2]/main/div/div/section[1]/div/div[3]/div[4]/div/div[2]/div[1]/div[1]/div[2]/div[2]/a',
-            ).text
+                dados_jogo[chave] = elemento
 
-            nota_critica = driver.find_element(
-                By.CSS_SELECTOR, '[data-testid="global-score-value"]'
-            ).text
-
-            reviews_critica = driver.find_element(
-                By.CSS_SELECTOR, '[data-testid="global-score-review-count-link"]'
-            ).text
-
-            nota_critica_num = int(nota_critica)
-            nota_publica_num = int(nota_publica)
-
-            gap = nota_publica_num - nota_critica_num
-
-            gap = gap * -1 if gap < 0 else gap
-
-            (
-                print(
-                    f"{cada_jogo} : {nota_publica} | {reviews_publicas} | {nota_critica} | {reviews_critica} |, gap de : {gap} | {genero} | {empresa}"
-                )
+            dados_jogo["gap"] = abs(
+                int(dados_jogo["nota_publica"]) - int(dados_jogo["nota_critica"])
             )
 
-            notas.append(
-                {
-                    "jogo": cada_jogo,
-                    "publico": nota_publica,
-                    "reviewns players": reviews_publicas,
-                    "critica": nota_critica,
-                    "reviews critica": reviews_critica,
-                    "gap": gap,
-                    "genero": genero,
-                    "empresa": empresa,
-                }
-            )
+            notas.append(dados_jogo)
+            print(f"{cada_jogo} coletado com sucesso")
 
         except Exception as e:
             print(f"ERRO EM : {cada_jogo}... pulando para o proximo")
