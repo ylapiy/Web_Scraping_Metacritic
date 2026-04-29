@@ -1,5 +1,5 @@
 from scraping import scraping_MultiTreads
-from arquivazacao import FactoryArquizacao
+from arquivamento import FactoryArquizacao
 
 jogos = [
     "Elden Ring",
