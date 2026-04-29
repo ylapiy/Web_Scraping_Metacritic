@@ -23,6 +23,7 @@ Determina a diferença absoluta entre:
 
 - Nota da crítica especializada
 - Nota dos usuários
+- graficos e insights usando dados adquiridos 
 
 ### 📁 Exportação Multiformato
 
