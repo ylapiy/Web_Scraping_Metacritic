@@ -1,8 +1,6 @@
 from scraping import scraping_MultiTreads
 from arquivazacao import FactoryArquizacao
 
-arquivo = input("Escolha do tipo de arquivo para salvar {json, excell, html, csv}")
-
 jogos = [
     "Elden Ring",
     "Bloodborne",
@@ -111,6 +109,8 @@ jogos = [
     "Shadow of the Colossus",
     "Dragon's Dogma: Dark Arisen",
 ]
+
+arquivo = input("Escolha do tipo de arquivo para salvar {json, excell, html, csv}")
 
 saida = scraping_MultiTreads(jogos, 5)
 

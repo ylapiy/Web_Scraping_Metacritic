@@ -6,20 +6,21 @@ path = "salvamentos/"
 
 def FactoryArquizacao(Lista, Tipo):
 
+    df = pd.DataFrame(Lista)
+
     match Tipo:
         case "excell":
-            criarExcell(Lista)
+            criarExcell(df)
         case "csv":
-            criarSCV(Lista)
+            criarSCV(df)
         case "json":
-            criarJson(Lista)
+            criarJson(df)
         case "html":
-            criarHTML(Lista)
+            criarHTML(df)
 
 
-def criarExcell(Lista):
-    df = pd.DataFrame(Lista)
-    write = pd.ExcelWriter(f"{path}tudo_ai.xls", engine="xlsxwriter")
+def criarExcell(df):
+    write = pd.ExcelWriter(f"{path}tudo_ai.xlsx", engine="xlsxwriter")
 
     df.to_excel(write, sheet_name="jogos", index=False)
 
@@ -50,19 +51,15 @@ def criarExcell(Lista):
     worksheet.autofilter(0, 0, num_linhas, len(df.columns) - 1)
 
     write.close()
-    print(f"Planilha salva com sucesso: tudo_ai.xls")
 
 
-def criarSCV(lista):
-    df = pd.DataFrame(lista)
+def criarSCV(df):
     df.to_csv(f"{path}tudo_ai.csv", index=True)
 
 
-def criarJson(Lista):
-    df = pd.DataFrame(Lista)
+def criarJson(df):
     df.to_json(f"{path}tudo_ai.json", index=False)
 
 
-def criarHTML(Lista):
-    df = pd.DataFrame(Lista)
+def criarHTML(df):
     df.to_html(f"{path}tudo_ai.html", index=False)
