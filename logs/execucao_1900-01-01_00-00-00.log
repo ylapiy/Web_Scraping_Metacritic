@@ -1,0 +1,562 @@
+2026-04-29 08:15:02,667 [INFO] ====== WebDriver manager ======
+2026-04-29 08:15:02,678 [INFO] ====== WebDriver manager ======
+2026-04-29 08:15:02,741 [INFO] ====== WebDriver manager ======
+2026-04-29 08:15:02,748 [INFO] ====== WebDriver manager ======
+2026-04-29 08:15:02,766 [INFO] ====== WebDriver manager ======
+2026-04-29 08:15:03,549 [INFO] Get LATEST chromedriver version for google-chrome
+2026-04-29 08:15:03,561 [INFO] Get LATEST chromedriver version for google-chrome
+2026-04-29 08:15:03,567 [INFO] Get LATEST chromedriver version for google-chrome
+2026-04-29 08:15:03,579 [INFO] Get LATEST chromedriver version for google-chrome
+2026-04-29 08:15:03,583 [INFO] Get LATEST chromedriver version for google-chrome
+2026-04-29 08:15:04,256 [INFO] Get LATEST chromedriver version for google-chrome
+2026-04-29 08:15:04,271 [INFO] Get LATEST chromedriver version for google-chrome
+2026-04-29 08:15:04,284 [INFO] Get LATEST chromedriver version for google-chrome
+2026-04-29 08:15:04,295 [INFO] Get LATEST chromedriver version for google-chrome
+2026-04-29 08:15:04,295 [INFO] Get LATEST chromedriver version for google-chrome
+2026-04-29 08:15:04,983 [INFO] Driver [C:\Users\teecno\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-04-29 08:15:05,024 [INFO] Driver [C:\Users\teecno\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-04-29 08:15:05,029 [INFO] Driver [C:\Users\teecno\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-04-29 08:15:05,031 [INFO] Driver [C:\Users\teecno\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-04-29 08:15:05,031 [INFO] Driver [C:\Users\teecno\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-04-29 08:15:09,566 [INFO] Sucesso: elden-ring
+2026-04-29 08:15:09,599 [INFO] Sucesso: wild-hearts
+2026-04-29 08:15:09,946 [INFO] Sucesso: soma
+2026-04-29 08:15:09,968 [INFO] Sucesso: apex-legends
+2026-04-29 08:15:10,003 [INFO] Sucesso: rain-world
+2026-04-29 08:15:11,297 [INFO] Sucesso: dragons-dogma-2
+2026-04-29 08:15:11,506 [INFO] Sucesso: bloodborne
+2026-04-29 08:15:12,003 [INFO] Sucesso: team-fortress-2
+2026-04-29 08:15:12,334 [INFO] Sucesso: pathologic-2
+2026-04-29 08:15:12,502 [INFO] Sucesso: code-vein
+2026-04-29 08:15:12,799 [INFO] Sucesso: sekiro-shadows-die-twice
+2026-04-29 08:15:13,728 [INFO] Sucesso: gundam-evolution
+2026-04-29 08:15:14,321 [INFO] Sucesso: monster-hunter-world
+2026-04-29 08:15:14,899 [INFO] Sucesso: gigantic-rampage-edition
+2026-04-29 08:15:15,648 [INFO] Sucesso: monster-hunter-rise
+2026-04-29 08:15:15,858 [INFO] Sucesso: bleeding-edge
+2026-04-29 08:15:17,306 [INFO] Sucesso: lies-of-p
+2026-04-29 08:15:22,859 [WARNING] Aviso em pacific-drive: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x127b373+10553]
+	chromedriver!GetHandleVerifier [0x127b4a4+10684]
+	chromedriver!(No symbol) [0x1081e10]
+	chromedriver!(No symbol) [0x10ca9da]
+	chromedriver!(No symbol) [0x10cac7b]
+	chromedriver!(No symbol) [0x110d162]
+	chromedriver!(No symbol) [0x10ed8b4]
+	chromedriver!(No symbol) [0x110aa36]
+	chromedriver!(No symbol) [0x10ed606]
+	chromedriver!(No symbol) [0x10c0039]
+	chromedriver!(No symbol) [0x10c0df4]
+	chromedriver!GetHandleVerifier [0x14fddb4+292f94]
+	chromedriver!GetHandleVerifier [0x14f937d+28e55d]
+	chromedriver!GetHandleVerifier [0x1518215+2ad3f5]
+	chromedriver!GetHandleVerifier [0x1294c18+29df8]
+	chromedriver!GetHandleVerifier [0x129c6fd+318dd]
+	chromedriver!GetHandleVerifier [0x1283c78+18e58]
+	chromedriver!GetHandleVerifier [0x1283e42+19022]
+	chromedriver!GetHandleVerifier [0x126d45f+263f]
+	KERNEL32!BaseThreadInitThunk [0x776ffcc9+19]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x778f82ae+11e]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x778f827e+ee]
+
+2026-04-29 08:15:23,675 [WARNING] Aviso em stalker-2-heart-of-chornobyl: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x127b373+10553]
+	chromedriver!GetHandleVerifier [0x127b4a4+10684]
+	chromedriver!(No symbol) [0x1081e10]
+	chromedriver!(No symbol) [0x10ca9da]
+	chromedriver!(No symbol) [0x10cac7b]
+	chromedriver!(No symbol) [0x110d162]
+	chromedriver!(No symbol) [0x10ed8b4]
+	chromedriver!(No symbol) [0x110aa36]
+	chromedriver!(No symbol) [0x10ed606]
+	chromedriver!(No symbol) [0x10c0039]
+	chromedriver!(No symbol) [0x10c0df4]
+	chromedriver!GetHandleVerifier [0x14fddb4+292f94]
+	chromedriver!GetHandleVerifier [0x14f937d+28e55d]
+	chromedriver!GetHandleVerifier [0x1518215+2ad3f5]
+	chromedriver!GetHandleVerifier [0x1294c18+29df8]
+	chromedriver!GetHandleVerifier [0x129c6fd+318dd]
+	chromedriver!GetHandleVerifier [0x1283c78+18e58]
+	chromedriver!GetHandleVerifier [0x1283e42+19022]
+	chromedriver!GetHandleVerifier [0x126d45f+263f]
+	KERNEL32!BaseThreadInitThunk [0x776ffcc9+19]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x778f82ae+11e]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x778f827e+ee]
+
+2026-04-29 08:15:23,796 [WARNING] Aviso em another-crabs-treasure: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x127b373+10553]
+	chromedriver!GetHandleVerifier [0x127b4a4+10684]
+	chromedriver!(No symbol) [0x1081e10]
+	chromedriver!(No symbol) [0x10ca9da]
+	chromedriver!(No symbol) [0x10cac7b]
+	chromedriver!(No symbol) [0x110d162]
+	chromedriver!(No symbol) [0x10ed8b4]
+	chromedriver!(No symbol) [0x110aa36]
+	chromedriver!(No symbol) [0x10ed606]
+	chromedriver!(No symbol) [0x10c0039]
+	chromedriver!(No symbol) [0x10c0df4]
+	chromedriver!GetHandleVerifier [0x14fddb4+292f94]
+	chromedriver!GetHandleVerifier [0x14f937d+28e55d]
+	chromedriver!GetHandleVerifier [0x1518215+2ad3f5]
+	chromedriver!GetHandleVerifier [0x1294c18+29df8]
+	chromedriver!GetHandleVerifier [0x129c6fd+318dd]
+	chromedriver!GetHandleVerifier [0x1283c78+18e58]
+	chromedriver!GetHandleVerifier [0x1283e42+19022]
+	chromedriver!GetHandleVerifier [0x126d45f+263f]
+	KERNEL32!BaseThreadInitThunk [0x776ffcc9+19]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x778f82ae+11e]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x778f827e+ee]
+
+2026-04-29 08:15:24,779 [INFO] Sucesso: doom-eternal
+2026-04-29 08:15:25,437 [INFO] Sucesso: enotria-the-last-song
+2026-04-29 08:15:25,483 [INFO] Sucesso: metro-exodus
+2026-04-29 08:15:26,962 [WARNING] Aviso em predecessor: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x127b373+10553]
+	chromedriver!GetHandleVerifier [0x127b4a4+10684]
+	chromedriver!(No symbol) [0x1081e10]
+	chromedriver!(No symbol) [0x10ca9da]
+	chromedriver!(No symbol) [0x10cac7b]
+	chromedriver!(No symbol) [0x110d162]
+	chromedriver!(No symbol) [0x10ed8b4]
+	chromedriver!(No symbol) [0x110aa36]
+	chromedriver!(No symbol) [0x10ed606]
+	chromedriver!(No symbol) [0x10c0039]
+	chromedriver!(No symbol) [0x10c0df4]
+	chromedriver!GetHandleVerifier [0x14fddb4+292f94]
+	chromedriver!GetHandleVerifier [0x14f937d+28e55d]
+	chromedriver!GetHandleVerifier [0x1518215+2ad3f5]
+	chromedriver!GetHandleVerifier [0x1294c18+29df8]
+	chromedriver!GetHandleVerifier [0x129c6fd+318dd]
+	chromedriver!GetHandleVerifier [0x1283c78+18e58]
+	chromedriver!GetHandleVerifier [0x1283e42+19022]
+	chromedriver!GetHandleVerifier [0x126d45f+263f]
+	KERNEL32!BaseThreadInitThunk [0x776ffcc9+19]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x778f82ae+11e]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x778f827e+ee]
+
+2026-04-29 08:15:27,102 [INFO] Sucesso: dusk
+2026-04-29 08:15:27,141 [INFO] Sucesso: grim-dawn
+2026-04-29 08:15:28,305 [INFO] Sucesso: smite
+2026-04-29 08:15:28,707 [WARNING] Aviso em demons-souls-(remake): Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x127b373+10553]
+	chromedriver!GetHandleVerifier [0x127b4a4+10684]
+	chromedriver!(No symbol) [0x1081e10]
+	chromedriver!(No symbol) [0x10ca9da]
+	chromedriver!(No symbol) [0x10cac7b]
+	chromedriver!(No symbol) [0x110d162]
+	chromedriver!(No symbol) [0x10ed8b4]
+	chromedriver!(No symbol) [0x110aa36]
+	chromedriver!(No symbol) [0x10ed606]
+	chromedriver!(No symbol) [0x10c0039]
+	chromedriver!(No symbol) [0x10c0df4]
+	chromedriver!GetHandleVerifier [0x14fddb4+292f94]
+	chromedriver!GetHandleVerifier [0x14f937d+28e55d]
+	chromedriver!GetHandleVerifier [0x1518215+2ad3f5]
+	chromedriver!GetHandleVerifier [0x1294c18+29df8]
+	chromedriver!GetHandleVerifier [0x129c6fd+318dd]
+	chromedriver!GetHandleVerifier [0x1283c78+18e58]
+	chromedriver!GetHandleVerifier [0x1283e42+19022]
+	chromedriver!GetHandleVerifier [0x126d45f+263f]
+	KERNEL32!BaseThreadInitThunk [0x776ffcc9+19]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x778f82ae+11e]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x778f827e+ee]
+
+2026-04-29 08:15:28,880 [INFO] Sucesso: armored-core-vi-fires-of-rubicon
+2026-04-29 08:15:29,514 [INFO] Sucesso: devil-may-cry-5
+2026-04-29 08:15:30,397 [INFO] Sucesso: nioh
+2026-04-29 08:15:30,494 [INFO] Sucesso: bayonetta-3
+2026-04-29 08:15:31,695 [INFO] Sucesso: metal-gear-rising-revengeance
+2026-04-29 08:15:31,701 [INFO] Sucesso: katana-zero
+2026-04-29 08:15:31,868 [INFO] Sucesso: nioh-2
+2026-04-29 08:15:32,879 [INFO] Sucesso: wo-long-fallen-dynasty
+2026-04-29 08:15:33,074 [INFO] Sucesso: hades
+2026-04-29 08:15:33,474 [INFO] Sucesso: hotline-miami
+2026-04-29 08:15:34,464 [INFO] Sucesso: the-surge
+2026-04-29 08:15:34,564 [INFO] Sucesso: hades-ii
+2026-04-29 08:15:35,767 [INFO] Sucesso: the-surge-2
+2026-04-29 08:15:35,926 [INFO] Sucesso: enter-the-gungeon
+2026-04-29 08:15:36,064 [INFO] Sucesso: dead-cells
+2026-04-29 08:15:36,606 [WARNING] Aviso em black-myth-wukong: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x127b373+10553]
+	chromedriver!GetHandleVerifier [0x127b4a4+10684]
+	chromedriver!(No symbol) [0x1081e10]
+	chromedriver!(No symbol) [0x10ca9da]
+	chromedriver!(No symbol) [0x10cac7b]
+	chromedriver!(No symbol) [0x110d162]
+	chromedriver!(No symbol) [0x10ed8b4]
+	chromedriver!(No symbol) [0x110aa36]
+	chromedriver!(No symbol) [0x10ed606]
+	chromedriver!(No symbol) [0x10c0039]
+	chromedriver!(No symbol) [0x10c0df4]
+	chromedriver!GetHandleVerifier [0x14fddb4+292f94]
+	chromedriver!GetHandleVerifier [0x14f937d+28e55d]
+	chromedriver!GetHandleVerifier [0x1518215+2ad3f5]
+	chromedriver!GetHandleVerifier [0x1294c18+29df8]
+	chromedriver!GetHandleVerifier [0x129c6fd+318dd]
+	chromedriver!GetHandleVerifier [0x1283c78+18e58]
+	chromedriver!GetHandleVerifier [0x1283e42+19022]
+	chromedriver!GetHandleVerifier [0x126d45f+263f]
+	KERNEL32!BaseThreadInitThunk [0x776ffcc9+19]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x778f82ae+11e]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x778f827e+ee]
+
+2026-04-29 08:15:37,626 [INFO] Sucesso: nier-automata
+2026-04-29 08:15:37,832 [WARNING] Aviso em the-binding-of-isaac-repentance: invalid literal for int() with base 10: '8.7'
+2026-04-29 08:15:37,897 [INFO] Sucesso: mortal-shell
+2026-04-29 08:15:39,346 [WARNING] Aviso em turbo-overkill: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x127b373+10553]
+	chromedriver!GetHandleVerifier [0x127b4a4+10684]
+	chromedriver!(No symbol) [0x1081e10]
+	chromedriver!(No symbol) [0x10ca9da]
+	chromedriver!(No symbol) [0x10cac7b]
+	chromedriver!(No symbol) [0x110d162]
+	chromedriver!(No symbol) [0x10ed8b4]
+	chromedriver!(No symbol) [0x110aa36]
+	chromedriver!(No symbol) [0x10ed606]
+	chromedriver!(No symbol) [0x10c0039]
+	chromedriver!(No symbol) [0x10c0df4]
+	chromedriver!GetHandleVerifier [0x14fddb4+292f94]
+	chromedriver!GetHandleVerifier [0x14f937d+28e55d]
+	chromedriver!GetHandleVerifier [0x1518215+2ad3f5]
+	chromedriver!GetHandleVerifier [0x1294c18+29df8]
+	chromedriver!GetHandleVerifier [0x129c6fd+318dd]
+	chromedriver!GetHandleVerifier [0x1283c78+18e58]
+	chromedriver!GetHandleVerifier [0x1283e42+19022]
+	chromedriver!GetHandleVerifier [0x126d45f+263f]
+	KERNEL32!BaseThreadInitThunk [0x776ffcc9+19]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x778f82ae+11e]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x778f827e+ee]
+
+2026-04-29 08:15:39,438 [INFO] Sucesso: astral-chain
+2026-04-29 08:15:39,589 [INFO] Sucesso: risk-of-rain-2
+2026-04-29 08:15:39,985 [INFO] Sucesso: lords-of-the-fallen
+2026-04-29 08:15:40,683 [INFO] Sucesso: amid-evil
+2026-04-29 08:15:41,457 [INFO] Sucesso: granblue-fantasy-relink
+2026-04-29 08:15:42,463 [INFO] Sucesso: ghostrunner
+2026-04-29 08:15:42,842 [INFO] Sucesso: god-eater-3
+2026-04-29 08:15:43,532 [INFO] Sucesso: ghostrunner-2
+2026-04-29 08:15:44,221 [INFO] Sucesso: toukiden-2
+2026-04-29 08:15:48,292 [WARNING] Aviso em sifu: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x127b373+10553]
+	chromedriver!GetHandleVerifier [0x127b4a4+10684]
+	chromedriver!(No symbol) [0x1081e10]
+	chromedriver!(No symbol) [0x10ca9da]
+	chromedriver!(No symbol) [0x10cac7b]
+	chromedriver!(No symbol) [0x110d162]
+	chromedriver!(No symbol) [0x10ed8b4]
+	chromedriver!(No symbol) [0x110aa36]
+	chromedriver!(No symbol) [0x10ed606]
+	chromedriver!(No symbol) [0x10c0039]
+	chromedriver!(No symbol) [0x10c0df4]
+	chromedriver!GetHandleVerifier [0x14fddb4+292f94]
+	chromedriver!GetHandleVerifier [0x14f937d+28e55d]
+	chromedriver!GetHandleVerifier [0x1518215+2ad3f5]
+	chromedriver!GetHandleVerifier [0x1294c18+29df8]
+	chromedriver!GetHandleVerifier [0x129c6fd+318dd]
+	chromedriver!GetHandleVerifier [0x1283c78+18e58]
+	chromedriver!GetHandleVerifier [0x1283e42+19022]
+	chromedriver!GetHandleVerifier [0x126d45f+263f]
+	KERNEL32!BaseThreadInitThunk [0x776ffcc9+19]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x778f82ae+11e]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x778f827e+ee]
+
+2026-04-29 08:15:49,142 [INFO] Sucesso: dauntless
+2026-04-29 08:15:49,331 [INFO] Sucesso: metal-hellsinger
+2026-04-29 08:15:50,736 [INFO] Sucesso: thymesia
+2026-04-29 08:15:50,842 [WARNING] Aviso em god-of-war-(valhalla-dlc): Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x127b373+10553]
+	chromedriver!GetHandleVerifier [0x127b4a4+10684]
+	chromedriver!(No symbol) [0x1081e10]
+	chromedriver!(No symbol) [0x10ca9da]
+	chromedriver!(No symbol) [0x10cac7b]
+	chromedriver!(No symbol) [0x110d162]
+	chromedriver!(No symbol) [0x10ed8b4]
+	chromedriver!(No symbol) [0x110aa36]
+	chromedriver!(No symbol) [0x10ed606]
+	chromedriver!(No symbol) [0x10c0039]
+	chromedriver!(No symbol) [0x10c0df4]
+	chromedriver!GetHandleVerifier [0x14fddb4+292f94]
+	chromedriver!GetHandleVerifier [0x14f937d+28e55d]
+	chromedriver!GetHandleVerifier [0x1518215+2ad3f5]
+	chromedriver!GetHandleVerifier [0x1294c18+29df8]
+	chromedriver!GetHandleVerifier [0x129c6fd+318dd]
+	chromedriver!GetHandleVerifier [0x1283c78+18e58]
+	chromedriver!GetHandleVerifier [0x1283e42+19022]
+	chromedriver!GetHandleVerifier [0x126d45f+263f]
+	KERNEL32!BaseThreadInitThunk [0x776ffcc9+19]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x778f82ae+11e]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x778f827e+ee]
+
+2026-04-29 08:15:51,367 [WARNING] Aviso em salt-and-sanctuary: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x127b373+10553]
+	chromedriver!GetHandleVerifier [0x127b4a4+10684]
+	chromedriver!(No symbol) [0x1081e10]
+	chromedriver!(No symbol) [0x10ca9da]
+	chromedriver!(No symbol) [0x10cac7b]
+	chromedriver!(No symbol) [0x110d162]
+	chromedriver!(No symbol) [0x10ed8b4]
+	chromedriver!(No symbol) [0x110aa36]
+	chromedriver!(No symbol) [0x10ed606]
+	chromedriver!(No symbol) [0x10c0039]
+	chromedriver!(No symbol) [0x10c0df4]
+	chromedriver!GetHandleVerifier [0x14fddb4+292f94]
+	chromedriver!GetHandleVerifier [0x14f937d+28e55d]
+	chromedriver!GetHandleVerifier [0x1518215+2ad3f5]
+	chromedriver!GetHandleVerifier [0x1294c18+29df8]
+	chromedriver!GetHandleVerifier [0x129c6fd+318dd]
+	chromedriver!GetHandleVerifier [0x1283c78+18e58]
+	chromedriver!GetHandleVerifier [0x1283e42+19022]
+	chromedriver!GetHandleVerifier [0x126d45f+263f]
+	KERNEL32!BaseThreadInitThunk [0x776ffcc9+19]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x778f82ae+11e]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x778f827e+ee]
+
+2026-04-29 08:15:52,132 [INFO] Sucesso: hellblade-senuas-sacrifice
+2026-04-29 08:15:52,916 [INFO] Sucesso: blasphemous
+2026-04-29 08:15:52,934 [INFO] Sucesso: vanquish
+2026-04-29 08:15:54,652 [INFO] Sucesso: hi-fi-rush
+2026-04-29 08:15:54,784 [INFO] Sucesso: blasphemous-2
+2026-04-29 08:15:56,878 [INFO] Sucesso: darkest-dungeon
+2026-04-29 08:15:58,430 [INFO] Sucesso: darkest-dungeon-ii
+2026-04-29 08:16:03,321 [WARNING] Aviso em subnautica: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x127b373+10553]
+	chromedriver!GetHandleVerifier [0x127b4a4+10684]
+	chromedriver!(No symbol) [0x1081e10]
+	chromedriver!(No symbol) [0x10ca9da]
+	chromedriver!(No symbol) [0x10cac7b]
+	chromedriver!(No symbol) [0x110d162]
+	chromedriver!(No symbol) [0x10ed8b4]
+	chromedriver!(No symbol) [0x110aa36]
+	chromedriver!(No symbol) [0x10ed606]
+	chromedriver!(No symbol) [0x10c0039]
+	chromedriver!(No symbol) [0x10c0df4]
+	chromedriver!GetHandleVerifier [0x14fddb4+292f94]
+	chromedriver!GetHandleVerifier [0x14f937d+28e55d]
+	chromedriver!GetHandleVerifier [0x1518215+2ad3f5]
+	chromedriver!GetHandleVerifier [0x1294c18+29df8]
+	chromedriver!GetHandleVerifier [0x129c6fd+318dd]
+	chromedriver!GetHandleVerifier [0x1283c78+18e58]
+	chromedriver!GetHandleVerifier [0x1283e42+19022]
+	chromedriver!GetHandleVerifier [0x126d45f+263f]
+	KERNEL32!BaseThreadInitThunk [0x776ffcc9+19]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x778f82ae+11e]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x778f827e+ee]
+
+2026-04-29 08:16:03,322 [WARNING] Aviso em bpm-bullets-per-minute: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x127b373+10553]
+	chromedriver!GetHandleVerifier [0x127b4a4+10684]
+	chromedriver!(No symbol) [0x1081e10]
+	chromedriver!(No symbol) [0x10ca9da]
+	chromedriver!(No symbol) [0x10cac7b]
+	chromedriver!(No symbol) [0x110d162]
+	chromedriver!(No symbol) [0x10ed8b4]
+	chromedriver!(No symbol) [0x110aa36]
+	chromedriver!(No symbol) [0x10ed606]
+	chromedriver!(No symbol) [0x10c0039]
+	chromedriver!(No symbol) [0x10c0df4]
+	chromedriver!GetHandleVerifier [0x14fddb4+292f94]
+	chromedriver!GetHandleVerifier [0x14f937d+28e55d]
+	chromedriver!GetHandleVerifier [0x1518215+2ad3f5]
+	chromedriver!GetHandleVerifier [0x1294c18+29df8]
+	chromedriver!GetHandleVerifier [0x129c6fd+318dd]
+	chromedriver!GetHandleVerifier [0x1283c78+18e58]
+	chromedriver!GetHandleVerifier [0x1283e42+19022]
+	chromedriver!GetHandleVerifier [0x126d45f+263f]
+	KERNEL32!BaseThreadInitThunk [0x776ffcc9+19]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x778f82ae+11e]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x778f827e+ee]
+
+2026-04-29 08:16:04,319 [INFO] Sucesso: the-forgotten-city
+2026-04-29 08:16:04,583 [WARNING] Aviso em scorn: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x127b373+10553]
+	chromedriver!GetHandleVerifier [0x127b4a4+10684]
+	chromedriver!(No symbol) [0x1081e10]
+	chromedriver!(No symbol) [0x10ca9da]
+	chromedriver!(No symbol) [0x10cac7b]
+	chromedriver!(No symbol) [0x110d162]
+	chromedriver!(No symbol) [0x10ed8b4]
+	chromedriver!(No symbol) [0x110aa36]
+	chromedriver!(No symbol) [0x10ed606]
+	chromedriver!(No symbol) [0x10c0039]
+	chromedriver!(No symbol) [0x10c0df4]
+	chromedriver!GetHandleVerifier [0x14fddb4+292f94]
+	chromedriver!GetHandleVerifier [0x14f937d+28e55d]
+	chromedriver!GetHandleVerifier [0x1518215+2ad3f5]
+	chromedriver!GetHandleVerifier [0x1294c18+29df8]
+	chromedriver!GetHandleVerifier [0x129c6fd+318dd]
+	chromedriver!GetHandleVerifier [0x1283c78+18e58]
+	chromedriver!GetHandleVerifier [0x1283e42+19022]
+	chromedriver!GetHandleVerifier [0x126d45f+263f]
+	KERNEL32!BaseThreadInitThunk [0x776ffcc9+19]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x778f82ae+11e]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x778f827e+ee]
+
+2026-04-29 08:16:05,315 [INFO] Sucesso: firewatch
+2026-04-29 08:16:06,276 [INFO] Sucesso: exoprimal
+2026-04-29 08:16:06,328 [INFO] Sucesso: returnal
+2026-04-29 08:16:06,407 [WARNING] Aviso em hollow-knight: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x127b373+10553]
+	chromedriver!GetHandleVerifier [0x127b4a4+10684]
+	chromedriver!(No symbol) [0x1081e10]
+	chromedriver!(No symbol) [0x10ca9da]
+	chromedriver!(No symbol) [0x10cac7b]
+	chromedriver!(No symbol) [0x110d162]
+	chromedriver!(No symbol) [0x10ed8b4]
+	chromedriver!(No symbol) [0x110aa36]
+	chromedriver!(No symbol) [0x10ed606]
+	chromedriver!(No symbol) [0x10c0039]
+	chromedriver!(No symbol) [0x10c0df4]
+	chromedriver!GetHandleVerifier [0x14fddb4+292f94]
+	chromedriver!GetHandleVerifier [0x14f937d+28e55d]
+	chromedriver!GetHandleVerifier [0x1518215+2ad3f5]
+	chromedriver!GetHandleVerifier [0x1294c18+29df8]
+	chromedriver!GetHandleVerifier [0x129c6fd+318dd]
+	chromedriver!GetHandleVerifier [0x1283c78+18e58]
+	chromedriver!GetHandleVerifier [0x1283e42+19022]
+	chromedriver!GetHandleVerifier [0x126d45f+263f]
+	KERNEL32!BaseThreadInitThunk [0x776ffcc9+19]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x778f82ae+11e]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x778f827e+ee]
+
+2026-04-29 08:16:07,570 [INFO] Sucesso: tunic
+2026-04-29 08:16:07,582 [INFO] Sucesso: deathloop
+2026-04-29 08:16:07,887 [INFO] Sucesso: warframe
+2026-04-29 08:16:08,808 [INFO] Sucesso: sable
+2026-04-29 08:16:09,475 [INFO] Sucesso: remnant-from-the-ashes
+2026-04-29 08:16:09,543 [INFO] Sucesso: post-void
+2026-04-29 08:16:09,579 [WARNING] Aviso em fear-&-hunger: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x127b373+10553]
+	chromedriver!GetHandleVerifier [0x127b4a4+10684]
+	chromedriver!(No symbol) [0x1081e10]
+	chromedriver!(No symbol) [0x10ca9da]
+	chromedriver!(No symbol) [0x10cac7b]
+	chromedriver!(No symbol) [0x110d162]
+	chromedriver!(No symbol) [0x10ed8b4]
+	chromedriver!(No symbol) [0x110aa36]
+	chromedriver!(No symbol) [0x10ed606]
+	chromedriver!(No symbol) [0x10c0039]
+	chromedriver!(No symbol) [0x10c0df4]
+	chromedriver!GetHandleVerifier [0x14fddb4+292f94]
+	chromedriver!GetHandleVerifier [0x14f937d+28e55d]
+	chromedriver!GetHandleVerifier [0x1518215+2ad3f5]
+	chromedriver!GetHandleVerifier [0x1294c18+29df8]
+	chromedriver!GetHandleVerifier [0x129c6fd+318dd]
+	chromedriver!GetHandleVerifier [0x1283c78+18e58]
+	chromedriver!GetHandleVerifier [0x1283e42+19022]
+	chromedriver!GetHandleVerifier [0x126d45f+263f]
+	KERNEL32!BaseThreadInitThunk [0x776ffcc9+19]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x778f82ae+11e]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x778f827e+ee]
+
+2026-04-29 08:16:09,888 [INFO] Sucesso: return-of-the-obra-dinn
+2026-04-29 08:16:10,604 [INFO] Sucesso: destiny-2
+2026-04-29 08:16:11,038 [INFO] Sucesso: chants-of-sennaar
+2026-04-29 08:16:12,955 [INFO] Sucesso: shadow-of-the-colossus
+2026-04-29 08:16:14,528 [INFO] Sucesso: remnant-ii
+2026-04-29 08:16:15,882 [WARNING] Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=36878): Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente")': /session/f4c474613d525ece0944e1bfcde0ecab
+2026-04-29 08:16:19,231 [WARNING] Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=36882): Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente")': /session/8e4e5eb4b393d79cf3ef79e999f2f850
+2026-04-29 08:16:19,995 [WARNING] Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=36878): Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente")': /session/f4c474613d525ece0944e1bfcde0ecab
+2026-04-29 08:16:20,811 [WARNING] Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=36879): Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente")': /session/584c56d9a43a746e0bee65a46ce0fdec
+2026-04-29 08:16:21,468 [WARNING] Aviso em cruelty-squad: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x127b373+10553]
+	chromedriver!GetHandleVerifier [0x127b4a4+10684]
+	chromedriver!(No symbol) [0x1081e10]
+	chromedriver!(No symbol) [0x10ca9da]
+	chromedriver!(No symbol) [0x10cac7b]
+	chromedriver!(No symbol) [0x110d162]
+	chromedriver!(No symbol) [0x10ed8b4]
+	chromedriver!(No symbol) [0x110aa36]
+	chromedriver!(No symbol) [0x10ed606]
+	chromedriver!(No symbol) [0x10c0039]
+	chromedriver!(No symbol) [0x10c0df4]
+	chromedriver!GetHandleVerifier [0x14fddb4+292f94]
+	chromedriver!GetHandleVerifier [0x14f937d+28e55d]
+	chromedriver!GetHandleVerifier [0x1518215+2ad3f5]
+	chromedriver!GetHandleVerifier [0x1294c18+29df8]
+	chromedriver!GetHandleVerifier [0x129c6fd+318dd]
+	chromedriver!GetHandleVerifier [0x1283c78+18e58]
+	chromedriver!GetHandleVerifier [0x1283e42+19022]
+	chromedriver!GetHandleVerifier [0x126d45f+263f]
+	KERNEL32!BaseThreadInitThunk [0x776ffcc9+19]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x778f82ae+11e]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x778f827e+ee]
+
+2026-04-29 08:16:22,446 [WARNING] Aviso em the-witness: Message: 
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x127b373+10553]
+	chromedriver!GetHandleVerifier [0x127b4a4+10684]
+	chromedriver!(No symbol) [0x1081e10]
+	chromedriver!(No symbol) [0x10ca9da]
+	chromedriver!(No symbol) [0x10cac7b]
+	chromedriver!(No symbol) [0x110d162]
+	chromedriver!(No symbol) [0x10ed8b4]
+	chromedriver!(No symbol) [0x110aa36]
+	chromedriver!(No symbol) [0x10ed606]
+	chromedriver!(No symbol) [0x10c0039]
+	chromedriver!(No symbol) [0x10c0df4]
+	chromedriver!GetHandleVerifier [0x14fddb4+292f94]
+	chromedriver!GetHandleVerifier [0x14f937d+28e55d]
+	chromedriver!GetHandleVerifier [0x1518215+2ad3f5]
+	chromedriver!GetHandleVerifier [0x1294c18+29df8]
+	chromedriver!GetHandleVerifier [0x129c6fd+318dd]
+	chromedriver!GetHandleVerifier [0x1283c78+18e58]
+	chromedriver!GetHandleVerifier [0x1283e42+19022]
+	chromedriver!GetHandleVerifier [0x126d45f+263f]
+	KERNEL32!BaseThreadInitThunk [0x776ffcc9+19]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x778f82ae+11e]
+	ntdll!RtlGetAppContainerNamedObjectPath [0x778f827e+ee]
+
+2026-04-29 08:16:23,340 [WARNING] Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=36882): Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente")': /session/8e4e5eb4b393d79cf3ef79e999f2f850
+2026-04-29 08:16:23,431 [INFO] Sucesso: prodeus
+2026-04-29 08:16:24,084 [WARNING] Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=36878): Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente")': /session/f4c474613d525ece0944e1bfcde0ecab
+2026-04-29 08:16:24,794 [INFO] Sucesso: the-talos-principle
+2026-04-29 08:16:24,944 [WARNING] Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=36879): Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente")': /session/584c56d9a43a746e0bee65a46ce0fdec
+2026-04-29 08:16:25,392 [INFO] Sucesso: ion-fury
+2026-04-29 08:16:26,683 [INFO] Sucesso: the-talos-principle-2
+2026-04-29 08:16:27,062 [INFO] Sucesso: shadow-warrior-2
+2026-04-29 08:16:27,453 [WARNING] Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=36882): Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente")': /session/8e4e5eb4b393d79cf3ef79e999f2f850
+2026-04-29 08:16:28,058 [INFO] Sucesso: titanfall-2
+2026-04-29 08:16:28,165 [INFO] Navegador fechado corretamente.
+2026-04-29 08:16:28,203 [INFO] ====== WebDriver manager ======
+2026-04-29 08:16:28,417 [INFO] Sucesso: no-mans-sky
+2026-04-29 08:16:29,036 [WARNING] Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=36879): Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente")': /session/584c56d9a43a746e0bee65a46ce0fdec
+2026-04-29 08:16:29,064 [INFO] Sucesso: severed-steel
+2026-04-29 08:16:29,099 [INFO] Get LATEST chromedriver version for google-chrome
+2026-04-29 08:16:29,438 [INFO] Get LATEST chromedriver version for google-chrome
+2026-04-29 08:16:29,557 [INFO] Sucesso: citizen-sleeper
+2026-04-29 08:16:29,770 [INFO] Driver [C:\Users\teecno\.wdm\drivers\chromedriver\win64\147.0.7727.117\chromedriver-win32/chromedriver.exe] found in cache
+2026-04-29 08:16:30,125 [INFO] Sucesso: roboquest
+2026-04-29 08:16:31,533 [INFO] Navegador fechado corretamente.
+2026-04-29 08:16:31,660 [INFO] Sucesso: overwatch-2
+2026-04-29 08:16:33,135 [INFO] Navegador fechado corretamente.
+2026-04-29 08:16:33,378 [INFO] Sucesso: paladins
+2026-04-29 08:16:34,335 [INFO] Sucesso: valorant
+2026-04-29 08:16:35,372 [INFO] Sucesso: dragons-dogma-dark-arisen
+2026-04-29 08:16:35,820 [WARNING] Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=36883): Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente")': /session/5b512c1d6e0e68d1c2b15b45b3783adc
+2026-04-29 08:16:39,914 [WARNING] Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=36883): Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente")': /session/5b512c1d6e0e68d1c2b15b45b3783adc
+2026-04-29 08:16:40,628 [WARNING] Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=36881): Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente")': /session/f76f6aae71a84b9b1722a5486de2302e
+2026-04-29 08:16:41,622 [WARNING] Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=37249): Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente")': /session/4c21bb8d22ed5a1750c1ce961360bfa7
+2026-04-29 08:16:44,035 [WARNING] Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=36883): Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente")': /session/5b512c1d6e0e68d1c2b15b45b3783adc
+2026-04-29 08:16:44,764 [WARNING] Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=36881): Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente")': /session/f76f6aae71a84b9b1722a5486de2302e
+2026-04-29 08:16:45,731 [WARNING] Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=37249): Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente")': /session/4c21bb8d22ed5a1750c1ce961360bfa7
+2026-04-29 08:16:48,172 [INFO] Navegador fechado corretamente.
+2026-04-29 08:16:48,884 [WARNING] Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=36881): Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente")': /session/f76f6aae71a84b9b1722a5486de2302e
+2026-04-29 08:16:49,865 [WARNING] Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError("HTTPConnection(host='localhost', port=37249): Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente")': /session/4c21bb8d22ed5a1750c1ce961360bfa7
+2026-04-29 08:16:52,993 [INFO] Navegador fechado corretamente.
+2026-04-29 08:16:53,988 [INFO] Navegador fechado corretamente.

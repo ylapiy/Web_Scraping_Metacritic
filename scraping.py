@@ -7,6 +7,26 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.options import Options
 from concurrent.futures import ThreadPoolExecutor
+from fake_useragent import UserAgent
+import logging
+import datetime as date
+import os
+
+# -------------------------------------------------------------------------
+
+os.makedirs("logs", exist_ok=True)
+log_filename = f"logs/execucao_{date.time().strftime('%Y-%m-%d_%H-%M-%S')}.log"
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] %(message)s",
+    handlers=[
+        logging.FileHandler(log_filename, encoding="utf-8"),
+        logging.StreamHandler(),
+    ],
+)
+
+# -------------------------------------------------------------------------
 
 
 def scraping(jogos):
@@ -29,7 +49,10 @@ def scraping(jogos):
         "empresa": (By.CSS_SELECTOR, 'a[href*="/company/"]'),
     }
 
+    user_agent = UserAgent().random
+
     options = Options()
+    options.add_argument(f"user-agent={user_agent}")
     options.add_argument("--headless=new")
     options.add_argument("--no-sandbox")
     options.add_argument("--disable-dev-shm-usage")
@@ -65,11 +88,14 @@ def scraping(jogos):
 
                 notas.append(dados_jogo)
                 print(f"{cada_jogo} coletado com sucesso")
+                logging.info(f"Sucesso: {cada_jogo}")
 
             except Exception as e:
                 print(f"ERRO EM : {cada_jogo}... pulando para o proximo")
+                logging.warning(f"Aviso em {cada_jogo}: {e}")
 
     driver.quit()
+    logging.info("Navegador fechado corretamente.")
 
     return notas
 

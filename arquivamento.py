@@ -50,16 +50,21 @@ def criarExcell(df):
 
     worksheet.autofilter(0, 0, num_linhas, len(df.columns) - 1)
 
+    print("arquivo salvo com sucesso no formato .xlsx")
+
     write.close()
 
 
 def criarSCV(df):
     df.to_csv(f"{path}tudo_ai.csv", index=True)
+    print("arquivo salvo com sucesso no formato .csv")
 
 
 def criarJson(df):
     df.to_json(f"{path}tudo_ai.json", index=False)
+    print("arquivo salvo com sucesso no formato .json")
 
 
 def criarHTML(df):
     df.to_html(f"{path}tudo_ai.html", index=False)
+    print("arquivo salvo com sucesso no formato .html")
