@@ -11,6 +11,18 @@ from fake_useragent import UserAgent
 import logging
 import datetime as date
 import os
+import winotify
+
+# -------------------------------------------------------------------------
+
+notificacao = winotify.Notification(
+    app_id="Scraping",
+    title="Notificação da Automação",
+    msg="Terinou o Scraping do Metacritic",
+    duration="short",
+)
+
+notificacao.set_audio(winotify.audio.LoopingAlarm, loop=False)
 
 # -------------------------------------------------------------------------
 
@@ -131,4 +143,5 @@ def scraping_MultiTreads(jogos, n):
     for i in resultados:
         notas_totais.extend(i)
 
+    notificacao.show()
     return notas_totais

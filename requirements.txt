@@ -1,0 +1,15 @@
+# Automação e Web Scraping
+selenium
+webdriver-manager
+fake-useragent
+
+# Manipulação e Arquivamento de Dados
+pandas
+xlsxwriter
+
+# Visualização de Dados (usados no notebook de gráficos)
+matplotlib
+seaborn
+
+# Notificações
+winotify
